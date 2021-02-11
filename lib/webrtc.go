@@ -181,6 +181,7 @@ func CreateWebRTCConnection(ingestionAddress, streamKey, offerStr string) (answe
 
 	// Create answer
 	answer, err = peerConnection.CreateAnswer(nil)
+	fmt.Println(answer)
 	if err != nil {
 		panic(err)
 	}
